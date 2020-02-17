@@ -1,0 +1,13 @@
+{% extends 'baselevel.html' %}
+
+{% block content %}
+    {% for image in images %}
+        
+        <div>
+            <h2>{{ image.title }}</h2>
+            <img src="{{ image.photo }}" alt="picture added by admin">
+            <p>{{ image.description }}</p>
+        </div>
+
+    {% endfor %}
+{% endblock content %}
