@@ -3,10 +3,12 @@
 {% block content %}
     {% for image in images %}
         
-        <div>
-            <h2>{{ image.title }}</h2>
-            <img src="{{ image.photo }}" alt="picture added by admin">
-            <p>{{ image.description }}</p>
+        <div class="row">
+            <h2 class="col-xs-12 col-md-8">{{ image.title }}</h2>
+            <div class="w-100"></div>
+            <img src="{{ image.photo }}" alt="picture added by admin" class="col-xs-12 col-md-8">
+            <div class="w-100"></div>
+            <p class="col-xs-12 col-md-8">{{ image.description }}</p>
         </div>
 
     {% endfor %}
